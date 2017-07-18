@@ -1,5 +1,5 @@
 --- # Coping index.html files
-- hosts: 10.0.102.103
+- hosts: localhost
   user: test
   sudo: yes
   connection: ssh
