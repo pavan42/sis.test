@@ -10,4 +10,4 @@
   - name: start httpd
     command: systemctl start httpd
   - name: deploying index.html file
-    action: copy src=/home/ec2-user/index.html dest=/var/www/html/index.html owner=root group=root mode=0777
+    action: copy src=/home/ec2-user/index.html dest=/var/www/html/index.html owner=root group=root mode=0644
