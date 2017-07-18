@@ -1,0 +1,13 @@
+--- # Coping index.html files
+- hosts: 10.0.102.103
+  user: test
+  sudo: yes
+  connection: ssh
+  gather_facts: no
+  tasks:
+  - name: install Httpd
+    yum: pkg=httpd state=latest
+  - name: start httpd
+    command: systemctl start httpd
+  - name: deploying index.html file
+    action: copy src=/home/ec2-user/index.html dest=/var/www/html/index.html owner=root group=root mode=0777
