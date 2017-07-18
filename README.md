@@ -1,1 +1,1 @@
-# installation of hhtpd webserver using the ansible playbook.
+# installation of httpd webserver using the ansible playbook.
